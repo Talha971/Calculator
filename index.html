@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+    <p id="xyz">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus maxime
+      beatae cupiditate in tempora nostrum ipsam nihil aperiam temporibus rem
+      aliquid possimus qui, tempore exercitationem quos! Cumque ullam architecto
+      quasi!
+      <a id="anc" onclick="abc()" href="">read more</a>
+    </p> -->
+
+    <div>
+      <div>
+        <input id="inp" type="text" />
+      </div>
+      <button onclick="c()">clear</button>
+      <button onclick="clr()">clear All</button>
+      <div>
+        <button onclick="dabaya(9)">9</button>
+        <button onclick="dabaya(8)">8</button>
+        <button onclick="dabaya(7)">7</button>
+        <button onclick="dabaya('+')">+</button>
+      </div>
+      <div>
+        <button onclick="dabaya(6)">6</button>
+        <button onclick="dabaya(5)">5</button>
+        <button onclick="dabaya(4)">4</button>
+        <button onclick="dabaya('-')">-</button>
+      </div>
+
+      <div>
+        <button onclick="dabaya(3)">3</button>
+        <button onclick="dabaya(2)">2</button>
+        <button onclick="dabaya(1)">1</button>
+        <button onclick="dabaya('*')">*</button>
+      </div>
+      <div>
+        <button onclick="dabaya(0)">0</button>
+        <button onclick="dabaya('%')">%</button>
+        <button onclick="dabaya('/')">/</button>
+        <button onclick="eq()">=</button>
+      </div>
+    </div>
+
+    <script>
+      // var a="hjhjkhjkh jkjkkj kjkjkj kjkjkjkjk kjkjkjhkjhuyun hjhjhkj"
+      // function abc(){
+      //     document.getElementById("anc")
+      // }
+
+      function dabaya(e) {
+        document.getElementById("inp").value += e;
+      }
+      function eq() {
+        var a = document.getElementById("inp");
+        a.value = eval(a.value);
+      }
+
+      function clr() {
+        document.getElementById("inp").value = "";
+      }
+function c(){
+    var a =document.getElementById("inp")
+    
+}
+    
+    //   cosole.log("a")
+      // function abc(){
+
+      //     document.getElementById('ttt').innerHTML = 'hello world'
+      //     document.getElementById('anc').style.display = 'none'
+
+      //     // document.getElementById('abc').innerHTML = 'hello world'
+      // }
+
+      // function dabaya(e){
+      //     document.getElementById('inp').value += e
+      // }
+
+      // function eq(){
+      //     var a = document.getElementById('inp')
+      //     a.value = eval(a.value)
+      // }
+
+      // function clr(){
+      //     document.getElementById('inp').value = ''
+      // }
+    </script>
+  </body>
+</html>
