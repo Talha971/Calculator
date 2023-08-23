@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(44, 197, 13);
+    
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    border-radius: 100%;
+    color: white;
+}
+.ac{
+background-color: yellow;
+}
+.del{
+background-color: red;
+}
+.op{
+    background-color: black;
+}
+.no{
+    background-color: cadetblue;
+}
+.eq{
+background-color: chocolate;
+}
