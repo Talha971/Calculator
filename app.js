@@ -1,16 +1,16 @@
 
 function dabaya(e) {
-    document.getElementById("inp").value += e;
-  }
-  function eq() {
-    var a = document.getElementById("inp");
-    a.value = eval(a.value);
-  }
+  document.getElementById("inp").value += e;
+}
+function eq() {
+  var a = document.getElementById("inp");
+  a.value = eval(a.value);
+}
 
-  function clr() {
-    document.getElementById("inp").value = "";
-  }
-function c(){
-var a =document.getElementById("inp")
-
+function clr() {
+  document.getElementById("inp").value = " ";
+}
+function del() {
+  var a = document.getElementById("inp");
+  a.value = a.value.slice(0, -1);
 }

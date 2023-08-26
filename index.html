@@ -4,97 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- 
-    <p id="xyz">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus maxime
-      beatae cupiditate in tempora nostrum ipsam nihil aperiam temporibus rem
-      aliquid possimus qui, tempore exercitationem quos! Cumque ullam architecto
-      quasi!
-      <a id="anc" onclick="abc()" href="">read more</a>
-    </p> -->
-
+    <h1>CALCULTOR</h1>
     <div class="main">
-      <div>
-        <input id="inp" type="text" />
-      </div>
-      <div>
-      <button class="ac" onclick="c()">AC</button>
-      <button class="del" onclick="clr()">DEL</button>
-      <button class="op"  onclick="dabaya('%')">%</button>
-</div>
-      <div>
-        <button class="no" onclick="dabaya(9)">9</button>
-        <button class="no" onclick="dabaya(8)">8</button>
-        <button class="no" onclick="dabaya(7)">7</button>
-        <button class="op" onclick="dabaya('+')">+</button>
-      </div>
-      <div>
-        <button class="no" onclick="dabaya(6)">6</button>
-        <button class="no" onclick="dabaya(5)">5</button>
-        <button class="no" onclick="dabaya(4)">4</button>
-        <button class="op" onclick="dabaya('-')">-</button>
-      </div>
-
-      <div>
-        <button class="no" onclick="dabaya(3)">3</button>
-        <button class="no" onclick="dabaya(2)">2</button>
-        <button class="no" onclick="dabaya(1)">1</button>
-        <button class="op" onclick="dabaya('*')">*</button>
-      </div>
-      <div>
-        <button class="no" onclick="dabaya(0)">0</button>
-        <button class="no" onclick="dabaya('.')">.</button>
-        <button class="op" onclick="dabaya('/')">/</button>
-        <button class="eq" onclick="eq()">=</button>
-      </div>
-    </div>
-
-    <script src="app.js">
-      // var a="hjhjkhjkh jkjkkj kjkjkj kjkjkjkjk kjkjkjhkjhuyun hjhjhkj"
-      // function abc(){
-      //     document.getElementById("anc")
-      // }
-
-      function dabaya(e) {
-        document.getElementById("inp").value += e;
-      }
-      function eq() {
-        var a = document.getElementById("inp");
-        a.value = eval(a.value);
-      }
-
-      function clr() {
-        document.getElementById("inp").value = "";
-      }
-function c(){
-    var a =document.getElementById("inp")
-    
-}
-    
-    //   cosole.log("a")
-      // function abc(){
-
-      //     document.getElementById('ttt').innerHTML = 'hello world'
-      //     document.getElementById('anc').style.display = 'none'
-
-      //     // document.getElementById('abc').innerHTML = 'hello world'
-      // }
-
-      // function dabaya(e){
-      //     document.getElementById('inp').value += e
-      // }
-
-      // function eq(){
-      //     var a = document.getElementById('inp')
-      //     a.value = eval(a.value)
-      // }
-
-      // function clr(){
-      //     document.getElementById('inp').value = ''
-      // }
-    </script>
+    <table class="tabl">
+      <tr>
+        <td colspan="4"><input id="inp" type="text" /></td>
+      </tr>
+      <tr>
+        <td><button class="k" onclick="clr()">AC</button></td>
+        <td class="del"><button class="" onclick="del()">DEL</button></td>
+        <td><button class="op" onclick="dabaya('+')">+</button></td>
+        <td><button class="op" onclick="dabaya('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button class="" onclick="dabaya(9)">9</button></td>
+        <td><button class="" onclick="dabaya(8)">8</button></td>
+        <td><button class="" onclick="dabaya(7)">7</button></td>
+        <td><button class="op" onclick="dabaya('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button class="" onclick="dabaya(6)">6</button></td>
+        <td><button class="" onclick="dabaya(5)">5</button></td>
+        <td><button class="" onclick="dabaya(4)">4</button></td>
+        <td><button class="op" onclick="dabaya('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button class="" onclick="dabaya(3)">3</button></td>
+        <td><button class="" onclick="dabaya(2)">2</button></td>
+        <td><button class="" onclick="dabaya(1)">1</button></td>
+        <td><button class="op" onclick="dabaya('%')">%</button></td>
+      </tr>
+      <tr>
+        <td><button class="" onclick="dabaya(0)">0</button></td>
+        <td><button class="" onclick="dabaya('00')">00</button></td>
+        <td><button class="" onclick="dabaya('.')">.</button></td>
+        <td><button class="" onclick="eq()">=</button></td>
+      </tr>
+      <tr></tr>
+    </table>
+  </div>
+    <script src="app.js"></script>
   </body>
 </html>
