@@ -6,46 +6,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>CALCULTOR</h1>
-    <div class="main">
-    <table class="tabl">
-      <tr>
-        <td colspan="4"><input id="inp" type="text" /></td>
+    <h1 style="color: darkblue;">CALCULATOR</h1>
+
+    <table>
+      <tr style="margin: 6px">
+        <td colspan="4" class="inp_tr">
+          <input type="text" name="screen" id="inp" />
+        </td>
       </tr>
       <tr>
-        <td><button class="k" onclick="clr()">AC</button></td>
-        <td class="del"><button class="" onclick="del()">DEL</button></td>
-        <td><button class="op" onclick="dabaya('+')">+</button></td>
-        <td><button class="op" onclick="dabaya('/')">/</button></td>
+        <td onclick="alclr()">AC</td>
+        <td onclick="del()">DEL</td>
+        <td onclick="abc('*')">*</td>
+        <td onclick="abc('/')">/</td>
       </tr>
       <tr>
-        <td><button class="" onclick="dabaya(9)">9</button></td>
-        <td><button class="" onclick="dabaya(8)">8</button></td>
-        <td><button class="" onclick="dabaya(7)">7</button></td>
-        <td><button class="op" onclick="dabaya('-')">-</button></td>
+        <td onclick="abc(9)">9</td>
+        <td onclick="abc(8)">8</td>
+        <td onclick="abc(7)">7</td>
+        <td onclick="abc('+')">+</td>
       </tr>
       <tr>
-        <td><button class="" onclick="dabaya(6)">6</button></td>
-        <td><button class="" onclick="dabaya(5)">5</button></td>
-        <td><button class="" onclick="dabaya(4)">4</button></td>
-        <td><button class="op" onclick="dabaya('*')">*</button></td>
+        <td onclick="abc(6)">6</td>
+        <td onclick="abc(5)">5</td>
+        <td onclick="abc(4)">4</td>
+        <td onclick="abc('-')">-</td>
       </tr>
       <tr>
-        <td><button class="" onclick="dabaya(3)">3</button></td>
-        <td><button class="" onclick="dabaya(2)">2</button></td>
-        <td><button class="" onclick="dabaya(1)">1</button></td>
-        <td><button class="op" onclick="dabaya('%')">%</button></td>
+        <td onclick="abc(3)">3</td>
+        <td onclick="abc(2)">2</td>
+        <td onclick="abc(1)">1</td>
+        <td onclick="abc('%')">%</td>
       </tr>
       <tr>
-        <td><button class="" onclick="dabaya(0)">0</button></td>
-        <td><button class="" onclick="dabaya('00')">00</button></td>
-        <td><button class="" onclick="dabaya('.')">.</button></td>
-        <td><button class="" onclick="eq()">=</button></td>
+        <td onclick="abc(0)">0</td>
+        <td onclick="abc('00')">00</td>
+        <td onclick="abc('.')">.</td>
+        <td onclick="eq()">=</td>
       </tr>
-      <tr></tr>
     </table>
-  </div>
+
     <script src="app.js"></script>
   </body>
 </html>
